@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { KeepAwake } from '@capacitor-community/keep-awake';
 import {
   Player,
   MatchSettings,
@@ -133,6 +134,22 @@ export default function App() {
 
   // Clock Play / Pause state (ephemeral to active match)
   const [isPaused, setIsPaused] = useState<boolean>(true);
+
+  // Native App Wake Lock
+  useEffect(() => {
+    const manageWakeLock = async () => {
+      try {
+        if (!isPaused && activeGame?.status === 'in_progress') {
+          await KeepAwake.keepAwake();
+        } else {
+          await KeepAwake.allowSleep();
+        }
+      } catch (e) {
+        // Will fail silently if not running inside Capacitor
+      }
+    };
+    manageWakeLock();
+  }, [isPaused, activeGame?.status]);
 
   // Modals & Interaction State
   const [isGameManagerOpen, setIsGameManagerOpen] = useState(false);
