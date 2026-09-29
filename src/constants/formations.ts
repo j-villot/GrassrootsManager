@@ -1,0 +1,186 @@
+import { FormationPreset } from '../types/football';
+
+export const FORMATION_PRESETS: FormationPreset[] = [
+  // ================= 9v9 FORMATIONS (U12 STANDARD) =================
+  {
+    id: '9v9-3-1-3-1',
+    name: '3-1-3-1 (Pivot & Triangles - Coach Favorite)',
+    format: '9v9',
+    description: 'Premier developmental formation. 3 solid defenders, 1 holding CDM pivot, 3 dynamic attacking midfielders/wingers, and 1 clinical striker.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'LCB', label: 'LCB', x: 24, y: 72 },
+      { id: 'cb', role: 'CB', label: 'CB', x: 50, y: 74 },
+      { id: 'rcb', role: 'RCB', label: 'RCB', x: 76, y: 72 },
+      { id: 'cdm', role: 'CDM', label: 'CDM', x: 50, y: 55 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 18, y: 35 },
+      { id: 'cam', role: 'CAM', label: 'CAM', x: 50, y: 33 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 82, y: 35 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 16 },
+    ],
+  },
+  {
+    id: '9v9-3-3-2',
+    name: '3-3-2 (Balanced U12 Standard)',
+    format: '9v9',
+    description: 'Traditional 9v9 shape. Solid 3-man defense, wide midfield trio, and dual striker partnership.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'LCB', label: 'LCB', x: 24, y: 68 },
+      { id: 'cb', role: 'CB', label: 'CB', x: 50, y: 70 },
+      { id: 'rcb', role: 'RCB', label: 'RCB', x: 76, y: 68 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 20, y: 44 },
+      { id: 'cm', role: 'CM', label: 'CM', x: 50, y: 46 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 80, y: 44 },
+      { id: 'ls', role: 'ST', label: 'LS', x: 35, y: 20 },
+      { id: 'rs', role: 'ST', label: 'RS', x: 65, y: 20 },
+    ],
+  },
+  {
+    id: '9v9-3-2-3',
+    name: '3-2-3 (Attacking Width)',
+    format: '9v9',
+    description: 'Great for width and crossing. 3 defenders, 2 central pivot midfielders, and 3 high attackers.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'LCB', label: 'LCB', x: 24, y: 68 },
+      { id: 'cb', role: 'CB', label: 'CB', x: 50, y: 70 },
+      { id: 'rcb', role: 'RCB', label: 'RCB', x: 76, y: 68 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 38, y: 47 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 62, y: 47 },
+      { id: 'lw', role: 'LW', label: 'LW', x: 18, y: 24 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 18 },
+      { id: 'rw', role: 'RW', label: 'RW', x: 82, y: 24 },
+    ],
+  },
+  {
+    id: '9v9-3-4-1',
+    name: '3-4-1 (Midfield Control)',
+    format: '9v9',
+    description: 'Dominates the center. Wide midfielders provide support for both back line and solo striker.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'LCB', label: 'LCB', x: 24, y: 68 },
+      { id: 'cb', role: 'CB', label: 'CB', x: 50, y: 70 },
+      { id: 'rcb', role: 'RCB', label: 'RCB', x: 76, y: 68 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 16, y: 46 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 39, y: 48 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 61, y: 48 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 84, y: 46 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 19 },
+    ],
+  },
+  {
+    id: '9v9-2-4-2',
+    name: '2-4-2 (High Pressing)',
+    format: '9v9',
+    description: 'Aggressive attacking setup. Requires fast center-backs and energetic box-to-box midfield.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'CB', label: 'LCB', x: 34, y: 70 },
+      { id: 'rcb', role: 'CB', label: 'RCB', x: 66, y: 70 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 16, y: 45 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 39, y: 46 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 61, y: 46 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 84, y: 45 },
+      { id: 'ls', role: 'ST', label: 'LS', x: 36, y: 19 },
+      { id: 'rs', role: 'ST', label: 'RS', x: 64, y: 19 },
+    ],
+  },
+  {
+    id: '9v9-4-3-1',
+    name: '4-3-1 (Defensive Stability)',
+    format: '9v9',
+    description: 'Back four protection with wing backs and midfield trio to secure leads.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lb', role: 'LB', label: 'LB', x: 16, y: 67 },
+      { id: 'lcb', role: 'CB', label: 'LCB', x: 38, y: 70 },
+      { id: 'rcb', role: 'CB', label: 'RCB', x: 62, y: 70 },
+      { id: 'rb', role: 'RB', label: 'RB', x: 84, y: 67 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 26, y: 45 },
+      { id: 'cm', role: 'CM', label: 'CM', x: 50, y: 46 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 74, y: 45 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 19 },
+    ],
+  },
+
+  // ================= 7v7 FORMATIONS =================
+  {
+    id: '7v7-2-3-1',
+    name: '2-3-1 (Classic 7v7)',
+    format: '7v7',
+    description: 'The global standard for 7-a-side grassroots development.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lcb', role: 'CB', label: 'LCB', x: 32, y: 68 },
+      { id: 'rcb', role: 'CB', label: 'RCB', x: 68, y: 68 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 20, y: 45 },
+      { id: 'cm', role: 'CM', label: 'CM', x: 50, y: 47 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 80, y: 45 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 20 },
+    ],
+  },
+  {
+    id: '7v7-3-2-1',
+    name: '3-2-1 (Solid 7v7 Tree)',
+    format: '7v7',
+    description: 'Very resilient back three with two central orchestrators.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 88 },
+      { id: 'lb', role: 'LB', label: 'LB', x: 22, y: 68 },
+      { id: 'cb', role: 'CB', label: 'CB', x: 50, y: 70 },
+      { id: 'rb', role: 'RB', label: 'RB', x: 78, y: 68 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 38, y: 45 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 62, y: 45 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 20 },
+    ],
+  },
+
+  // ================= 11v11 FORMATIONS =================
+  {
+    id: '11v11-4-3-3',
+    name: '4-3-3 (Total Football)',
+    format: '11v11',
+    description: 'Pro standard 11v11 formation for older transitions.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 89 },
+      { id: 'lb', role: 'LB', label: 'LB', x: 15, y: 69 },
+      { id: 'lcb', role: 'CB', label: 'LCB', x: 38, y: 72 },
+      { id: 'rcb', role: 'CB', label: 'RCB', x: 62, y: 72 },
+      { id: 'rb', role: 'RB', label: 'RB', x: 85, y: 69 },
+      { id: 'cdm', role: 'CDM', label: 'CDM', x: 50, y: 54 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 33, y: 42 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 67, y: 42 },
+      { id: 'lw', role: 'LW', label: 'LW', x: 18, y: 22 },
+      { id: 'st', role: 'ST', label: 'ST', x: 50, y: 17 },
+      { id: 'rw', role: 'RW', label: 'RW', x: 82, y: 22 },
+    ],
+  },
+  {
+    id: '11v11-4-4-2',
+    name: '4-4-2 (Classic Flat)',
+    format: '11v11',
+    description: 'Traditional solid two banks of four with twin strikers.',
+    slots: [
+      { id: 'gk', role: 'GK', label: 'GK', x: 50, y: 89 },
+      { id: 'lb', role: 'LB', label: 'LB', x: 15, y: 69 },
+      { id: 'lcb', role: 'CB', label: 'LCB', x: 38, y: 72 },
+      { id: 'rcb', role: 'CB', label: 'RCB', x: 62, y: 72 },
+      { id: 'rb', role: 'RB', label: 'RB', x: 85, y: 69 },
+      { id: 'lm', role: 'LM', label: 'LM', x: 18, y: 45 },
+      { id: 'lcm', role: 'CM', label: 'LCM', x: 39, y: 47 },
+      { id: 'rcm', role: 'CM', label: 'RCM', x: 61, y: 47 },
+      { id: 'rm', role: 'RM', label: 'RM', x: 82, y: 45 },
+      { id: 'ls', role: 'ST', label: 'LS', x: 37, y: 20 },
+      { id: 'rs', role: 'ST', label: 'RS', x: 63, y: 20 },
+    ],
+  },
+];
+
+export const DEFAULT_FORMATION_ID = '9v9-3-1-3-1';
+
+export function getFormationById(id: string): FormationPreset {
+  const found = FORMATION_PRESETS.find(f => f.id === id);
+  return found || FORMATION_PRESETS[0];
+}
